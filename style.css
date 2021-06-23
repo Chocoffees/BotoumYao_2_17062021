@@ -1,0 +1,109 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  line-height: 60px 0;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+
+h2 {
+  font-size: small;
+  font-weight: normal;
+  color: black;
+}
+
+/*cadrage zone de recherche A REVOIR*/
+#recherche {
+  width: 300px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/*A REVOIR*/
+#boutonRecherche {
+  font-weight: bold;
+  color: white;
+  background-color: #0065fc;
+  border: none;
+  margin-bottom: 50px;
+}
+
+/*-----filtres de recherche utilisateur-----*/
+/*alignement des filtres*/
+.filtres {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/*habillage bordures*/
+.bordureFiltres {
+  height: 26px;
+  width: 155px;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  border: 3px solid #f2f2f2;
+  margin-left: 10px;
+  margin-right: 7px;
+  background-color: white;
+  border-radius: 19px;
+}
+
+/*bloc icônes Font Awesome*/
+.iconFiltres {
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 8px;
+  margin-left: -3px;
+  background-color: #deebff;
+}
+.fas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+}
+
+/*nom des filtres*/
+.nomFiltres {
+  text-align: center;
+  font-size: small;
+}
+
+#styleFiltres {
+  font-size: small;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/*-----résultat recherche utilisateur-----*/
+/*bloc*/
+.resultRecherche {
+  margin-top: 30px;
+}
+
+/*icône*/
+.fa-info {
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: #f2f2f2;
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  font-size: 0.6rem;
+  color: #0065fc;
+}
+
+/*résultat*/
+.resultat {
+  font-size: small;
+  font-weight: normal;
+}
