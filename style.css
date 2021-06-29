@@ -2,94 +2,145 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+/*couleurs charte
+bleu #0065fc
+bleu version claire #deebff
+fond gris #f2f2f2*/
+/*icônes Font Awesome*/
+
 h1 {
   line-height: 60px 0;
   font-size: large;
   font-weight: bold;
   color: black;
 }
-
 h2 {
   font-size: small;
   font-weight: normal;
   color: black;
 }
 
-/*cadrage zone de recherche A REVOIR*/
+/*-----recherche lieu de destination-----*/
+/*cadrage zone de recherche*/
 #recherche {
-  width: 300px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  border: 1px solid #f2f2f2;
-  text-align: center;
-  background-color: white;
-  border-radius: 20px;
+  height: 40px;
+  width: 350px;
+  display: inline-flex;
 }
-
-/*A REVOIR*/
-#boutonRecherche {
-  font-weight: bold;
-  color: white;
-  background-color: #0065fc;
+/*carte*/
+.destination {
+  width: 30px;
+  height: 40px;
+  background-color: #f2f2f2;
+  float: left;
+  color: black;
+  cursor: pointer;
+}
+.black {
+  align-content: center;
+  display: grid;
+  padding-left: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/*champ saisie*/
+.bordureChamp {
+  height: 40px;
+  width: 200px;
   border: none;
-  margin-bottom: 50px;
+  border: 1px solid #f2f2f2;
+}
+.marge {
+  padding-left: 10px;
+}
+::placeholder {
+  color: black;
+  opacity: 1; /*spécificité Firefox*/
+}
+::-webkit-input-placeholder {
+  font-weight: bold;
+}
+::-moz-placeholder {
+  font-weight: bold;
+}
+/*bouton*/
+.boutonRecherche {
+  height: 40px;
+  width: 110px;
+  color: white;
+  font-weight: bold;
+  background-color: #0065fc;
+  float: right;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 
 /*-----filtres de recherche utilisateur-----*/
-/*alignement des filtres*/
-.filtres {
-  margin-top: 30px;
+/*barre de filtres*/
+#filtres {
+  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  font-size: small;
+  font-weight: bold;
+  margin-right: 5px;
 }
-
-/*habillage bordures*/
+/*bordure filtres*/
 .bordureFiltres {
-  height: 26px;
-  width: 155px;
-  padding-top: 1px;
-  padding-bottom: 4px;
-  border: 3px solid #f2f2f2;
+  height: 32px;
+  width: 180px;
+  align-items: center;
+  align-content: space-between;
+  display: flex;
+  border-radius: 30px;
+  border: 2px solid #f2f2f2;
   margin-left: 10px;
   margin-right: 7px;
   background-color: white;
-  border-radius: 19px;
+  cursor: default;
 }
-
+.bordureFiltres:hover {
+  background-color: #deebff;
+  color: #0065fc;
+}
 /*bloc icônes Font Awesome*/
 .iconFiltres {
   border-radius: 30px;
   height: 30px;
   width: 30px;
-  margin-bottom: 8px;
-  margin-left: -3px;
   background-color: #deebff;
 }
-.fas {
+.blue {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #0065fc;
+  font-size: medium;
+  padding: 0.1em;
 }
-
+.blue:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}
 /*nom des filtres*/
 .nomFiltres {
-  text-align: center;
-  font-size: small;
-}
-
-#styleFiltres {
-  font-size: small;
-  font-weight: bold;
-  margin-right: 5px;
+  padding-left: 10px;
 }
 
 /*-----résultat recherche utilisateur-----*/
 /*bloc*/
 .resultRecherche {
-  margin-top: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  vertical-align: middle;
+  padding-top: 30px;
 }
-
 /*icône*/
 .fa-info {
   border: solid 1px;
@@ -101,9 +152,9 @@ h2 {
   font-size: 0.6rem;
   color: #0065fc;
 }
-
 /*résultat*/
 .resultat {
   font-size: small;
   font-weight: normal;
+  padding-left: 10px;
 }
