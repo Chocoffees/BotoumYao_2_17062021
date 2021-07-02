@@ -8,7 +8,57 @@ bleu version claire #deebff
 fond gris #f2f2f2*/
 /*icônes Font Awesome*/
 
+#container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+} 
+/*-----entête du site-----*/
+.introduction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/*menu*/
+.menu li {
+  list-style-type: none;
+  justify-content: center;
+}
+.menu {
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+.menu a {
+  display: block;
+  min-width: 130px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: small;
+  color: black;
+}
+.menu a:focus {
+  color:#0065fc ;
+  text-decoration-line: overline;
+}
+.inscription {
+  color: #0065fc;
+  font-weight: bolder; 
+  font-size: small;
+  text-decoration-line: none;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
 h1 {
+  padding-top: 20px;
   line-height: 60px 0;
   font-size: large;
   font-weight: bold;
