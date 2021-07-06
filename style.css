@@ -40,8 +40,8 @@ fond gris #f2f2f2*/
   font-size: small;
   color: black;
 }
-.menu a:focus {
-  color:#0065fc ;
+.menu a:active {
+  color:#0065fc;
   text-decoration-line: overline;
 }
 .inscription {
@@ -56,7 +56,6 @@ fond gris #f2f2f2*/
   align-items: center;
   padding-top: 20px;
 }
-
 h1 {
   padding-top: 20px;
   line-height: 60px 0;
@@ -75,33 +74,40 @@ h2 {
 #recherche {
   height: 40px;
   width: 350px;
-  display: inline-flex;
+  display: flex;
 }
 /*carte*/
 .destination {
-  width: 30px;
+  width: 40px;
   height: 40px;
+  display: flex;
+  border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
-  float: left;
+}
+.iconMap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
   color: black;
   cursor: pointer;
 }
-.black {
-  align-content: center;
-  display: grid;
-  padding-left: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+.lien {
+  text-decoration: none;
 }
 /*champ saisie*/
-.bordureChamp {
+.initRecherche {
+  width: 250px;
+  height: 40px;
+  display: flex;
+}
+.champSaisie {
   height: 40px;
   width: 200px;
+}
+.bordureChamp {
   border: none;
   border: 1px solid #f2f2f2;
-}
-.marge {
-  padding-left: 10px;
 }
 ::placeholder {
   color: black;
@@ -132,7 +138,6 @@ h2 {
 #filtres {
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   padding-top: 30px;
   font-size: small;
@@ -143,13 +148,10 @@ h2 {
 .bordureFiltres {
   height: 32px;
   width: 180px;
+  display:flex ;
   align-items: center;
-  align-content: space-between;
-  display: flex;
   border-radius: 30px;
   border: 2px solid #f2f2f2;
-  margin-left: 10px;
-  margin-right: 7px;
   background-color: white;
   cursor: default;
 }
@@ -178,7 +180,9 @@ h2 {
 }
 /*nom des filtres*/
 .nomFiltres {
-  padding-left: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
 }
 
 /*-----résultat recherche utilisateur-----*/
@@ -207,4 +211,73 @@ h2 {
   font-size: small;
   font-weight: normal;
   padding-left: 10px;
+}
+
+/*-----contenu recherche-----*/
+.principal {
+  height: 600px;
+  width: 750px;
+  align-content: center;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px 10px 20px 10px;
+  background-color: #f2f2f2;
+}
+.principal h1 {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.blocStyle {
+  height: 200px;
+  width: 210px;
+  padding: 5px 1px 1px 1px;
+  border-radius: 10px 10px 10px;
+  background-color: white;
+  display: inline-block;
+}
+.bloc a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.cartElements {
+  text-decoration: none;
+}
+a.cartElements:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.prix {
+  font-size: x-small;
+  color: black;
+  margin-bottom: 5px;
+}
+.principal h2 {
+  font-weight: bold;
+}
+h2.it, p.prix.it {
+  padding-left: 20px;
+}
+.it {
+  line-height: 0.5em;
+}
+.categorie {
+  margin-left: 20px;
+  font-size: x-small;
+  padding-top: 5px;
+}
+.plusResultat {
+  margin-top: 30px;
+  font-size: small;
+  font-weight: bold;
+  cursor: pointer;
 }
