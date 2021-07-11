@@ -13,51 +13,43 @@ fond gris #f2f2f2*/
   padding-left: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
-} 
+}
 /*-----entête du site-----*/
 .introduction {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 /*menu*/
-.menu li {
+nav ul {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+nav li {
+  display: inline;
   list-style-type: none;
-  justify-content: center;
 }
-.menu {
-  display: flex;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-left: 0px;
-}
-.menu a {
-  display: block;
-  min-width: 130px;
-  display: flex;
-  justify-content: center;
+nav a {
+  display: inline-block;
   text-decoration: none;
   font-size: small;
   color: black;
 }
-.menu a:active {
-  color:#0065fc;
+nav a:active {
+  color: #0065fc;
   text-decoration-line: overline;
 }
 .inscription {
   color: #0065fc;
-  font-weight: bolder; 
+  font-weight: bolder;
   font-size: small;
   text-decoration-line: none;
 }
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-}
 h1 {
-  padding-top: 20px;
   line-height: 60px 0;
   font-size: large;
   font-weight: bold;
@@ -76,15 +68,14 @@ h2 {
   width: 350px;
   display: flex;
 }
-/*carte*/
-.destination {
+/*icône map*/
+#recherche i {
   width: 40px;
   height: 40px;
-  display: flex;
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
 }
-.iconMap {
+.fa-map-marker-alt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,22 +83,16 @@ h2 {
   color: black;
   cursor: pointer;
 }
-.lien {
+a {
   text-decoration: none;
 }
-/*champ saisie*/
-.initRecherche {
-  width: 250px;
-  height: 40px;
-  display: flex;
-}
-.champSaisie {
-  height: 40px;
+/*champ saisie + bouton*/
+input {
   width: 200px;
-}
-.bordureChamp {
-  border: none;
+  height: 40px;
   border: 1px solid #f2f2f2;
+  padding-left: 15px;
+  display: flex;
 }
 ::placeholder {
   color: black;
@@ -119,8 +104,7 @@ h2 {
 ::-moz-placeholder {
   font-weight: bold;
 }
-/*bouton*/
-.boutonRecherche {
+button {
   height: 40px;
   width: 110px;
   color: white;
@@ -136,28 +120,27 @@ h2 {
 /*-----filtres de recherche utilisateur-----*/
 /*barre de filtres*/
 #filtres {
-  height: 100%;
+  height: 32px;
+  width: 850px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-top: 30px;
+  margin-bottom: 20px;
   font-size: small;
   font-weight: bold;
-  margin-right: 5px;
+}
+#filtres h1 {
+  font-size: small;
 }
 /*bordure filtres*/
 .bordureFiltres {
   height: 32px;
   width: 180px;
-  display:flex ;
+  display: flex;
   align-items: center;
   border-radius: 30px;
   border: 2px solid #f2f2f2;
-  background-color: white;
   cursor: default;
-}
-.bordureFiltres:hover {
-  background-color: #deebff;
-  color: #0065fc;
 }
 /*bloc icônes Font Awesome*/
 .iconFiltres {
@@ -166,7 +149,7 @@ h2 {
   width: 30px;
   background-color: #deebff;
 }
-.blue {
+.bordureFiltres i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,27 +157,20 @@ h2 {
   font-size: medium;
   padding: 0.1em;
 }
-.blue:hover {
+.bordureFiltres:hover {
+  background-color: #deebff;
+  color: #0065fc;
   transition: all 0.2s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 /*nom des filtres*/
 .nomFiltres {
-  width: 150px;
+  width: 130px;
   display: flex;
   justify-content: center;
 }
 
 /*-----résultat recherche utilisateur-----*/
-/*bloc*/
-.resultRecherche {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  vertical-align: middle;
-  padding-top: 30px;
-}
 /*icône*/
 .fa-info {
   border: solid 1px;
@@ -215,44 +191,31 @@ h2 {
 
 /*-----contenu recherche-----*/
 .principal {
-  height: 600px;
-  width: 750px;
-  align-content: center;
-  margin-top: 30px;
+  height: 550px;
+  width: 710px;
+  display: block;
   border-radius: 20px;
-  padding: 20px 10px 20px 10px;
+  padding: 20px 30px 30px 30px;
   background-color: #f2f2f2;
 }
-.principal h1 {
-  padding-top: 0px;
-  margin-top: 0px;
-}
-.blocStyle {
+.bloc {
   height: 200px;
   width: 210px;
   padding: 5px 1px 1px 1px;
   border-radius: 10px 10px 10px;
   background-color: white;
   display: inline-block;
+  margin: 10px 10px 10px 10px;
 }
 .bloc a {
   display: block;
   height: 100%;
   width: 100%;
 }
-.cartElements {
-  text-decoration: none;
-}
-a.cartElements:hover {
-  transition: all 0.2s ease-in-out;
-  transform: scale(1.1);
-}
-.photo {
+.bloc img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -264,7 +227,8 @@ img {
 .principal h2 {
   font-weight: bold;
 }
-h2.it, p.prix.it {
+h2.it,
+p.prix.it {
   padding-left: 20px;
 }
 .it {
@@ -275,9 +239,16 @@ h2.it, p.prix.it {
   font-size: x-small;
   padding-top: 5px;
 }
+.fa-star {
+  color: #0065fc;
+}
+.sansCategorie {
+  color: #f2f2f2;
+}
 .plusResultat {
   margin-top: 30px;
   font-size: small;
   font-weight: bold;
   cursor: pointer;
 }
+/*-----contenu popularité recherche-----*/
