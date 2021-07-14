@@ -86,19 +86,20 @@
         </div>
 
         <!--information sur résultat de la recherche utilisateur-->
-          <i class="fas fa-info"></i>
-          <span class="resultat"
-            >Plus de 500 logements sont disponibles dans cette ville</span
+          <div class="info">
+            <i class="fas fa-info"></i>
+          <span>Plus de 500 logements sont disponibles dans cette ville</span
           >
-        </div>
+          </div>
       </header>
 
       <main>
         <section>
         <!--résultat de la recherche utilisateur en fonction du lieu saisi-->
+        <div class="hebergements">
           <div class="principal">
-            <!--tête de section->affichage du choix du menu sélectionné-->
-            <h1 id="Hébergements">Hébergements à Marseille</h1>
+          <!--tête de section->affichage du choix du menu sélectionné-->
+          <h1 id="Hébergements">Hébergements à Marseille</h1>
             <div class="bloc">
               <a href="#"
                 ><img
@@ -201,16 +202,72 @@
                 </div>
               </a>
             </div>
-            <p class="plusResultat">Afficher plus</p>
+              <p class="plusResultat">Afficher plus</p>
           </div>
-        </section>
-
-        <aside>
+        
+          <!--Affichage popularité du choix sélectionné-->
           <div class="populaires">
-            <h1>Les plus populaires</h1>
-            <i class="fas fa-chart-line" style="color: #000000"></i>
+            <div class="entete">
+              <h1>Les plus populaires</h1>
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="blocPopulaires">
+              <a href="#"
+                ><img
+                  src="images/Hotel_Le_soleil_du_matin_mini.jpg"
+                  alt="Hôtel Le soleil du matin, hébergement élégant de style baroque à Marseille"
+                />
+              <div class="descriptif">
+                <h2 class="it">Hôtel Le soleil du matin</h2>
+                <p class="prix">Nuit à partir de 128€</p>
+              </div>
+              <div class="categoriePop">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+            </div>  
+            <div class="blocPopulaires">
+              <a href="#"
+                ><img
+                  src="images/Au_coeur_de_l_eau_Chambres_d_hotes_mini.jpg"
+                  alt="Au coeur de l'eau Chambre d'hôtes, hébergement spacieux, lumineux au style contemporain à Marseille"
+                />
+              <div class="descriptif">
+                <h2 class="it">Au coeur de l'eau Chambre d'hôtes</h2>
+                <p class="prix it">Nuit à partir de 71€</p>
+              </div>
+              <div class="categoriePop">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star sansCategorie"></i>
+              </div>
+            </div>
+            <div class="blocPopulaires">
+              <a href="#"
+                ><img
+                  src="images/Hotel_Tout_bleu_et_Blanc_mini.jpg"
+                  alt="Hôtel Tout bleu et Blanc, hébergement confortable au style sobre à Marseille"
+                />
+              <div class="descriptif">
+                <h2 class="it">Hôtel Tout bleu et Blanc</h2>
+                <p class="prix it">Nuit à partir de 68€</p>
+                </div>
+              <div class="categoriePop">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star sansCategorie"></i>
+              </div>     
+            </div>  
           </div>
-        </aside>
+        </div>      
+        </section>
       </main>
 
       <footer></footer>

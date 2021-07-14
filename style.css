@@ -9,8 +9,10 @@ fond gris #f2f2f2*/
 /*icônes Font Awesome*/
 
 #container {
-  padding-right: 30px;
-  padding-left: 30px;
+  width: 1200px;
+  height: 100%;
+  padding-right: 150px;
+  padding-left: 150px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -50,7 +52,7 @@ nav a:active {
   text-decoration-line: none;
 }
 h1 {
-  line-height: 60px 0;
+  line-height: normal;
   font-size: large;
   font-weight: bold;
   color: black;
@@ -125,7 +127,7 @@ button {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: small;
   font-weight: bold;
 }
@@ -172,40 +174,58 @@ button {
 
 /*-----résultat recherche utilisateur-----*/
 /*icône*/
-.fa-info {
-  border: solid 1px;
-  border-radius: 16px;
-  border-color: #f2f2f2;
+.info {
   height: 16px;
-  width: 16px;
-  background-color: white;
-  font-size: 0.6rem;
-  color: #0065fc;
+  width: 400px;
+  display: flex;
+  margin-bottom: 30px;
 }
-/*résultat*/
-.resultat {
+.info i {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  font-size: x-small;
+  border: 1px solid #f2f2f2;
+  border-radius: 30px;
+}
+.info span {
   font-size: small;
-  font-weight: normal;
   padding-left: 10px;
 }
-
 /*-----contenu recherche-----*/
+.hebergements {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .principal {
-  height: 550px;
-  width: 710px;
-  display: block;
+  height: 100%;
+  width: 730px;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   border-radius: 20px;
-  padding: 20px 30px 30px 30px;
   background-color: #f2f2f2;
 }
+.principal h1 {
+  height: 30px;
+  width: 100%;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
 .bloc {
-  height: 200px;
-  width: 210px;
-  padding: 5px 1px 1px 1px;
+  height: 210px;
+  width: 205px;
   border-radius: 10px 10px 10px;
   background-color: white;
-  display: inline-block;
-  margin: 10px 10px 10px 10px;
+  padding: 1px 1px 1px 1px;
+  margin-bottom: 15px;
 }
 .bloc a {
   display: block;
@@ -213,9 +233,7 @@ button {
   width: 100%;
 }
 .bloc img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 5px 5px 5px 5px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -229,10 +247,11 @@ button {
 }
 h2.it,
 p.prix.it {
+  margin-top: 0;
   padding-left: 20px;
 }
 .it {
-  line-height: 0.5em;
+  line-height: 1em;
 }
 .categorie {
   margin-left: 20px;
@@ -246,9 +265,68 @@ p.prix.it {
   color: #f2f2f2;
 }
 .plusResultat {
-  margin-top: 30px;
+  height: 20px;
+  width: 100%;
+  padding-left: 15px;
   font-size: small;
   font-weight: bold;
   cursor: pointer;
 }
 /*-----contenu popularité recherche-----*/
+.populaires {
+  height: 100%;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+}
+.entete {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.entete h1 {
+  height: 30px;
+}
+.fas.fa-chart-line {
+  height: 30px;
+  padding-right: 15px;
+}
+.blocPopulaires {
+  height: 120px;
+  width: 300px;
+  border-radius: 10px 10px 10px;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 40px;
+}
+.blocPopulaires img {
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 20px;
+}
+.descriptif {
+  height: 40px;
+  width: 260px;
+  margin-top: 20px;
+}
+.prix {
+  font-size: x-small;
+  color: black;
+}
+.populaires h2 {
+  font-weight: bold;
+}
+.descriptif h2.p.prix.it {
+  padding-left: 20px;
+}
+.categoriePop {
+  margin-left: 20px;
+  font-size: x-small;
+  padding-top: 30px;
+}
