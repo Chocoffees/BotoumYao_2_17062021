@@ -1,0 +1,81 @@
+@media screen and (max-width: 480px) {
+  header {
+    margin: 20px 20px 0 20px;
+    height: 550px;
+  }
+  .introduction {
+    position: relative;
+  }
+  nav {
+    position: absolute;
+    top: 30px;
+    bottom: 40px;
+    left: 5px;
+  }
+  nav ul {
+    height: auto;
+    justify-content: space-around;
+    line-height: 2rem;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  nav li {
+    display: inline-block;
+  }
+  nav a:active {
+    border-top: none;
+    text-decoration-line: underline;
+    color: #0065fc;
+  }
+  h1 {
+    padding-top: 40px;
+  }
+  #recherche {
+    padding-top: 20px;
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  input {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    height: 40px;
+    width: 50px;
+    border-radius: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  #recherche i.fas.fa-search {
+    display: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: medium;
+    background-color: transparent;
+  }
+  span {
+    display: none;
+  }
+  #filtres {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 100px;
+  }
+  #filtres h1 {
+    padding-bottom: 5px;
+  }
+  .bordureFiltres {
+    margin-bottom: 10px;
+  }
+  .info {
+    width: 100%;
+  }
+  .info span {
+    display: unset;
+  }
+}
