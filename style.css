@@ -1,5 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
 /*couleurs charte
@@ -17,11 +18,16 @@ fond gris #f2f2f2*/
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 /*menu*/
+nav {
+  position: relative;
+  left: 250px;
+}
 nav ul {
-  width: 400px;
-  height: auto;
+  width: 350px;
+  height: 100%;
   padding-left: 0;
   display: flex;
   justify-content: space-around;
@@ -29,6 +35,7 @@ nav ul {
 }
 nav li {
   display: inline;
+  height: 100%;
   list-style-type: none;
 }
 nav a {
@@ -39,9 +46,10 @@ nav a {
 }
 nav a:active {
   color: #0065fc;
-  text-decoration-line: overline;
+  padding: 14px 16px;
+  border-top: 3px solid #0065fc;
 }
-.inscription {
+a.inscription {
   color: #0065fc;
   font-weight: bolder;
   font-size: small;
@@ -87,7 +95,6 @@ a {
 /*champ saisie + bouton*/
 input {
   width: 200px;
-  height: 40px;
   border: 1px solid #f2f2f2;
   outline: none;
   display: flex;
@@ -115,6 +122,11 @@ button {
   border-bottom-right-radius: 10px;
   cursor: pointer;
 }
+
+i.fas.fa-search {
+  display: none;
+}
+/*icône fa-search pour barre de recherche mobile*/
 
 /*-----filtres de recherche utilisateur-----*/
 /*barre de filtres*/
@@ -333,7 +345,6 @@ p.prix.it {
 /*-----contenu activités-----*/
 .activites {
   height: 500px;
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -347,9 +358,10 @@ p.prix.it {
   grid-row: 1 / 2;
   margin-bottom: 15px;
 }
-.blocAct1 {
-  height: 400px;
+.activites a.act1,
+.activites a.act1bis {
   width: 260px;
+  height: 400px;
   grid-column: 1 / 3;
   grid-row: 2 / 4;
   border: 1px solid #f2f2f2;
@@ -357,11 +369,12 @@ p.prix.it {
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   cursor: pointer;
 }
-.blocAct1bis {
+.activites a.act1bis {
   grid-column: 3 / 4;
   grid-row: 2 / 4;
 }
-.blocAct1 img {
+.act1 img,
+.act1bis img {
   width: 100%;
   height: 350px;
   object-fit: cover;
@@ -371,7 +384,7 @@ p.prix.it {
   padding-left: 20px;
   font-weight: bold;
 }
-.blocAct2 {
+.activites a.act2 {
   height: 200px;
   width: 260px;
   grid-column: 2 / 3;
@@ -382,14 +395,14 @@ p.prix.it {
   align-self: start;
   cursor: pointer;
 }
-.blocAct2 img {
+.act2 img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   object-position: center;
   border-radius: 15px 15px 0 0;
 }
-.blocAct3 {
+.activites a.act3 {
   height: 160px;
   width: 260px;
   grid-column: 2 / 3;
@@ -400,14 +413,15 @@ p.prix.it {
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   cursor: pointer;
 }
-.blocAct3 img {
+.act3 img {
   width: 100%;
   height: 110px;
   object-fit: cover;
   object-position: center;
   border-radius: 15px 15px 0 0;
 }
-.blocAct4 {
+.activites a.act4,
+.activites a.act4bis {
   height: 180px;
   width: 260px;
   grid-column: 4 / 4;
@@ -417,11 +431,12 @@ p.prix.it {
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   cursor: pointer;
 }
-.blocAct4bis {
+.activites a.act4bis {
   grid-column: 4 / 4;
   grid-row: 3 / 4;
 }
-.blocAct4 img {
+.act4 img,
+.act4bis img {
   width: 100%;
   height: 130px;
   object-fit: cover;
@@ -431,12 +446,12 @@ p.prix.it {
 
 /*-----footer-----*/
 footer {
-  width: 100%;
-  height: 150px;
   background-color: #f2f2f2;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: auto;
+  padding: 20px 0;
 }
 footer h1 {
   font-size: small;
@@ -451,9 +466,5 @@ footer li {
   list-style: none;
 }
 footer div {
-  width: 360px;
-  height: 100%;
   line-height: 1.5em;
-  padding-top: 30px;
-  padding-left: 20px;
 }
