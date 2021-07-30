@@ -1,52 +1,69 @@
 @media screen and (max-width: 480px) {
-  header {
-    margin: 20px 20px 0 20px;
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
   }
-  .introduction {
-    position: relative;
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    margin: 15px 15px 0 15px;
   }
   /*menu*/
   nav {
+    width: 100%;
+    height: 70px;
     position: absolute;
     top: 30px;
     bottom: 40px;
-    left: 5px;
+    left: 0px;
+    right: 0px;
   }
   nav ul {
-    height: auto;
-    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    justify-content: space-evenly;
     line-height: 2rem;
-    border-bottom: 3px solid #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0;
   }
-  nav li {
+  nav li a {
+    width: 175px;
     display: inline-block;
+    border-bottom: 3px solid #f2f2f2;
+    padding-top: 10px;
   }
-  nav a:active {
+  nav a:active,
+  nav li:active {
     border-top: none;
-    text-decoration-line: underline;
+    border-bottom-color: #0065fc;
     color: #0065fc;
   }
   h1 {
-    padding-top: 40px;
+    margin-top: 70px;
   }
   /*-----recherche lieu de destination-----*/
   #recherche {
     padding-top: 20px;
     width: auto;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
   input {
     width: 100%;
-    height: auto;
   }
   button {
     height: 40px;
-    width: 50px;
-    border-radius: 10px 10px;
+    width: 40px;
+    border-radius: 0 10px 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    float: none;
     padding: 0;
   }
   #recherche i.fas.fa-search {
@@ -58,20 +75,31 @@
     font-size: small;
     background-color: transparent;
   }
-  span {
+  .customBouton {
     display: none;
   }
   #filtres {
     width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 100px;
+    height: auto;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: normal;
+    padding-top: 10px;
   }
   #filtres h1 {
     padding-bottom: 5px;
+    margin: 0px 10px;
+    grid-column: 1 / span 2;
   }
   .bordureFiltres {
+    width: max-content;
+    height: max-content;
     margin-bottom: 10px;
+    margin-right: 0px;
+  }
+  .alignBas {
+    grid-row: 4 / span 2;
   }
   .info {
     width: 100%;
@@ -79,48 +107,75 @@
   .info span {
     display: unset;
   }
+  /*-----main-----*/
+  main .hebergements {
+    display: flex;
+    flex-direction: column;
+  }
+  main .populaires {
+    order: 1;
+  }
+  main .principal {
+    order: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: auto;
+    width: auto;
+    border: unset;
+    background-color: unset;
+    padding-left: 15px;
+  }
   /*-----contenu popularité recherche-----*/
   .populaires {
-    height: auto;
+    height: max-content;
     width: 100%;
-    position: absolute;
-    top: auto;
     justify-content: center;
-    padding: 0 20px 30px 20px;
     border-radius: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .entete {
-    width: 90%;
-    padding-top: 10px;
+    width: auto;
   }
   .entete h1 {
     padding-top: 0px;
+    margin: 0px;
+  }
+  .fas.fa-chart-line {
+    margin-right: 20px;
   }
   .blocPopulaires {
-    width: 85%;
+    width: 90%;
     margin-bottom: 5px;
   }
   /*-----contenu recherche-----*/
-  .principal {
-    height: auto;
-    width: 100%;
-    position: absolute;
-    top: 1050px;
-    flex-direction: column;
-    align-items: center;
-    border: unset;
-    background-color: unset;
-  }
   .principal h1 {
     width: 100%;
     padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .bloc {
-    height: auto;
-    width: 60%;
-    border-radius: 0;
-    padding: 0 20px 10px 20px;
-    margin: 0;
+    height: 200px;
+    width: 95%;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    margin-bottom: 25px;
+  }
+  .bloc a {
+    height: 100%;
+    width: 100%;
+  }
+  .bloc img {
+    height: 120px;
+    width: 97%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px 15px 0 0;
   }
   h2.it {
     width: auto;
@@ -203,5 +258,6 @@
   }
   footer h1 {
     padding-top: 0;
+    margin-top: 20px;
   }
 }

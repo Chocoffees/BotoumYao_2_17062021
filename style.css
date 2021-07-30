@@ -46,7 +46,6 @@ nav a {
 }
 nav a:active {
   color: #0065fc;
-  padding: 14px 16px;
   border-top: 3px solid #0065fc;
 }
 a.inscription {
@@ -131,26 +130,24 @@ i.fas.fa-search {
 /*-----filtres de recherche utilisateur-----*/
 /*barre de filtres*/
 #filtres {
-  height: 32px;
-  width: 850px;
   display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
-  margin-bottom: 30px;
+  align-items: center;
+  padding: 30px 0 30px 0;
   font-size: small;
   font-weight: bold;
 }
 #filtres h1 {
   font-size: small;
+  margin-right: 30px;
 }
 /*bordure filtres*/
 .bordureFiltres {
   height: 32px;
-  width: 180px;
   display: flex;
   align-items: center;
   border-radius: 30px;
   border: 2px solid #f2f2f2;
+  margin-right: 20px;
   cursor: default;
 }
 /*bloc icônes Font Awesome*/
@@ -176,9 +173,8 @@ i.fas.fa-search {
 }
 /*nom des filtres*/
 .nomFiltres {
-  width: 130px;
-  display: flex;
-  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*-----résultat recherche utilisateur-----*/
@@ -206,7 +202,7 @@ i.fas.fa-search {
 }
 /*-----contenu recherche-----*/
 .hebergements {
-  height: 600px;
+  height: 550px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -228,12 +224,11 @@ i.fas.fa-search {
   margin-bottom: 0;
 }
 .bloc {
-  height: 210px;
+  height: max-content;
   width: 205px;
   border-radius: 10px 10px 10px;
   background-color: white;
-  padding: 1px 1px 1px 1px;
-  margin-bottom: 15px;
+  padding: 1px 1px 5px 1px;
   cursor: pointer;
 }
 .bloc a {
@@ -242,6 +237,10 @@ i.fas.fa-search {
   width: 100%;
 }
 .bloc img {
+  width: 95%;
+  height: 110px;
+  object-fit: cover;
+  object-position: center;
   padding: 5px 5px 5px 5px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -313,7 +312,7 @@ p.prix.it {
   background-color: white;
   padding: 5px 5px 5px 5px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 .blocPopulaires img {
