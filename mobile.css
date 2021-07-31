@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   html {
     width: 100%;
     height: 100%;
@@ -8,22 +8,23 @@
   #container {
     display: flex;
     flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   header {
     margin: 15px 15px 0 15px;
   }
   /*menu*/
   nav {
-    width: 100%;
     height: 70px;
     position: absolute;
     top: 30px;
     bottom: 40px;
-    left: 0px;
+    left: 10px;
     right: 0px;
   }
   nav ul {
-    width: 100%;
+    width: 95%;
     height: 50px;
     justify-content: space-evenly;
     line-height: 2rem;
@@ -32,7 +33,7 @@
     margin: 0;
   }
   nav li a {
-    width: 175px;
+    width: 160px;
     display: inline-block;
     border-bottom: 3px solid #f2f2f2;
     padding-top: 10px;
@@ -45,6 +46,7 @@
   }
   h1 {
     margin-top: 70px;
+    font-weight: bolder;
   }
   /*-----recherche lieu de destination-----*/
   #recherche {
@@ -88,6 +90,8 @@
     padding-top: 10px;
   }
   #filtres h1 {
+    font-size: 16px;
+    font-weight: bolder;
     padding-bottom: 5px;
     margin: 0px 10px;
     grid-column: 1 / span 2;
@@ -109,12 +113,38 @@
   }
   /*-----main-----*/
   main .hebergements {
+    height: max-content;
     display: flex;
     flex-direction: column;
   }
+  /*-----contenu popularité recherche-----*/
   main .populaires {
     order: 1;
   }
+  .populaires {
+    height: max-content;
+    width: auto;
+    justify-content: center;
+    border-radius: 0;
+    padding: 20px 15px 15px;
+  }
+  .entete {
+    width: auto;
+  }
+  .entete h1 {
+    width: auto;
+    padding-top: 0px;
+    margin: 0px;
+  }
+  .fas.fa-chart-line {
+    font-size: 20px;
+    padding-right: 30px;
+  }
+  .blocPopulaires {
+    width: 95%;
+    margin-bottom: 5px;
+  }
+  /*-----contenu recherche-----*/
   main .principal {
     order: 2;
     display: grid;
@@ -122,40 +152,17 @@
     grid-template-rows: max-content;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: auto;
-    width: auto;
+    height: max-content;
+    width: 95%;
     border: unset;
     background-color: unset;
     padding-left: 15px;
   }
-  /*-----contenu popularité recherche-----*/
-  .populaires {
-    height: max-content;
-    width: 100%;
-    justify-content: center;
-    border-radius: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .entete {
-    width: auto;
-  }
-  .entete h1 {
-    padding-top: 0px;
-    margin: 0px;
-  }
-  .fas.fa-chart-line {
-    margin-right: 20px;
-  }
-  .blocPopulaires {
-    width: 90%;
-    margin-bottom: 5px;
-  }
-  /*-----contenu recherche-----*/
   .principal h1 {
     width: 100%;
-    padding-left: 20px;
-    margin-top: 30px;
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   .bloc {
@@ -167,21 +174,25 @@
     margin-bottom: 25px;
   }
   .bloc a {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
   }
   .bloc img {
     height: 120px;
     width: 97%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     border-radius: 15px 15px 0 0;
   }
   h2.it {
-    width: auto;
+    width: 280px;
   }
   .plusResultat {
+    font-size: 16px;
+    font-weight: bolder;
+    padding-left: 0;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   /*-----contenu activités-----*/
   .activites {
@@ -193,9 +204,9 @@
     grid-row-gap: 20px;
     grid-column-gap: 0;
     column-width: auto;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-bottom: 30px;
-    margin-top: 1300px;
+    margin: 0;
   }
   .activites h1 {
     width: 240px;
@@ -253,8 +264,11 @@
   /*-----footer-----*/
   footer {
     flex-direction: column;
-    width: 100%;
-    padding-left: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  footer div {
+    padding-left: 30px;
   }
   footer h1 {
     padding-top: 0;
