@@ -94,3 +94,35 @@
     justify-self: center;
   }
 }
+
+@media only screen and (min-device-width: 798px) and (max-device-width: 1099px) and (-webkit-min-device-pixel-ratio: 1) {
+  .principal {
+    justify-content: inherit;
+  }
+  .bloc {
+    margin-right: 50px;
+  }
+  .populaires {
+    width: 50%;
+  }
+  .blocPopulaires {
+    width: 95%;
+  }
+  .activites {
+    width: 100%;
+  }
+  .activites h1,
+  .activites a.act1,
+  .activites a.act1bis {
+    justify-self: inherit;
+  }
+  .activites a.act2,
+  .activites a.act3,
+  .activites a.act4,
+  .activites a.act4bis {
+    width: 650px;
+  }
+  .activites a.act4 img {
+    object-position: top;
+  }
+}
