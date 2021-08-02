@@ -1,0 +1,96 @@
+@media only screen and (min-device-width: 668px) and (max-device-width: 1099px) and (-webkit-min-device-pixel-ratio: 1) {
+  #container {
+    padding: 15px 15px 0 15px;
+  }
+  /*-----entête du site-----*/
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    height: 60px;
+    border: 2px dashed #deebff;
+    border-radius: 10px 10px;
+    left: 0px;
+    margin-top: 10px;
+  }
+  nav ul {
+    height: 30px;
+  }
+  nav li {
+    height: 40px;
+    width: 100px;
+    font-weight: bolder;
+  }
+  nav li a {
+    text-decoration: double underline #0065fc;
+  }
+  nav li a:active {
+    border-top: none;
+  }
+  a.inscription {
+    position: absolute;
+    right: 60px;
+    top: 30px;
+  }
+  /*-----main-----*/
+  main .hebergements {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .principal {
+    height: 500px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .bloc {
+    width: 180px;
+    margin-right: 10px;
+  }
+  .populaires {
+    align-self: center;
+    margin-top: 20px;
+  }
+  /*-----contenu activités-----*/
+  .activites {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr 1fr max-content;
+    grid-template-rows: 0.3fr repeat(4, 1fr);
+  }
+  .activites h1 {
+    height: 30px;
+    padding-left: 15px;
+    justify-self: center;
+  }
+  .activites a.act1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    justify-self: center;
+  }
+  .activites a.act1bis {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+    justify-self: center;
+  }
+  .activites a.act2 {
+    justify-self: center;
+  }
+  .activites a.act3 {
+    justify-self: center;
+    align-self: center;
+  }
+  .activites a.act4 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+    justify-self: center;
+  }
+  .activites a.act4bis {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    justify-self: center;
+  }
+}
