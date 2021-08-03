@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 668px) and (max-device-width: 1099px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 668px) and (max-width: 1099px) {
   #container {
     padding: 15px 15px 0 15px;
   }
@@ -61,7 +61,7 @@
     grid-template-columns: 1fr 1fr max-content;
     grid-template-rows: 0.3fr repeat(4, 1fr);
   }
-  .activites h1 {
+  .activites h3 {
     height: 30px;
     padding-left: 15px;
     justify-self: center;
@@ -95,12 +95,10 @@
   }
 }
 
-@media only screen and (min-device-width: 798px) and (max-device-width: 1099px) and (-webkit-min-device-pixel-ratio: 1) {
-  .principal {
-    justify-content: inherit;
-  }
+@media only screen and (min-width: 798px) and (max-width: 997px) {
   .bloc {
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .populaires {
     width: 50%;
@@ -111,7 +109,7 @@
   .activites {
     width: 100%;
   }
-  .activites h1,
+  .activites h3,
   .activites a.act1,
   .activites a.act1bis {
     justify-self: inherit;
@@ -120,9 +118,27 @@
   .activites a.act3,
   .activites a.act4,
   .activites a.act4bis {
-    width: 650px;
+    width: 500px;
   }
   .activites a.act4 img {
     object-position: top;
+  }
+}
+
+@media only screen and (min-width: 998px) and (max-width: 1099px) {
+  .bloc {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .activites h3,
+  .activites a.act1,
+  .activites a.act1bis {
+    justify-self: inherit;
+  }
+  .activites a.act2,
+  .activites a.act3,
+  .activites a.act4,
+  .activites a.act4bis {
+    width: 500px;
   }
 }

@@ -6,7 +6,7 @@
     Reservia : Hébergements, Activités dans la ville de votre choix
   </title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+  <meta name="viewport" content="width=device-width" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <script src="https://kit.fontawesome.com/33069ba4d0.js" crossorigin="anonymous"></script>
@@ -40,7 +40,7 @@
       <!--section recherche utilisateur-non fonctionnelle pour ce prototype-->
       <div id="recherche">
         <a href="" target="_blank">
-          <i class="fas fa-map-marker-alt" role="button" title="Afficher la carte" viewbox="0 0 10 10"></i>
+          <i class="fas fa-map-marker-alt" title="Afficher la carte"></i>
         </a>
         <input type="text" title="Saisir la destination" id="lieu" name="ville" placeholder="Marseille, France" />
         <button><i class="fas fa-search"></i>
@@ -79,7 +79,7 @@
         <!--résultat de la recherche utilisateur en fonction du lieu saisi-->
         <div class="principal">
           <!--tête de section->affichage du choix du menu sélectionné-->
-          <h1 id="Hébergements">Hébergements à Marseille</h1>
+          <h3 id="Hébergements">Hébergements à Marseille</h3>
           <a href="#">
             <div class="bloc">
               <img src="images/Auberge_La_Cannebiere.jpg"
@@ -176,7 +176,7 @@
         <!--Affichage popularité du choix sélectionné-->
         <div class="populaires">
           <div class="entete">
-            <h1>Les plus populaires</h1>
+            <h3>Les plus populaires</h3>
             <i class="fas fa-chart-line"></i>
           </div>
           <a href="#">
@@ -235,7 +235,7 @@
 
       <!--liste activités-->
       <section class="activites">
-        <h1 id="Activités">Activités à Marseille</h1>
+        <h3 id="Activités">Activités à Marseille</h3>
         <a href="#" class="act1">
           <div>
             <img src="images/Vieux_Port.jpg" alt="Activité au Vieux Port de Marseille avec Reservia">
@@ -278,33 +278,31 @@
       </section>
     </main>
   </div>
+
+  <footer>
+    <div>
+      <h1>A propos</h1>
+      <ul>
+        <li>Fonctionnement du site</li>
+        <li>Conditions générales de vente</li>
+        <li>Données et confidentialité</li>
+      </ul>
+    </div>
+    <div>
+      <h1>Nos hébergements</h1>
+      <ul>
+        <li>Charte qualité</li>
+        <li>Soumettre votre hôtel</li>
+      </ul>
+    </div>
+    <div>
+      <h1>Assistance</h1>
+      <ul>
+        <li>Centre d'aide</li>
+        <li>Nous contacter</li>
+      </ul>
+    </div>
+  </footer>
 </body>
-
-<footer>
-  <div>
-    <h1>A propos</h1>
-    <ul>
-      <li>Fonctionnement du site</li>
-      <li>Conditions générales de vente</li>
-      <li>Données et confidentialité</li>
-    </ul>
-  </div>
-  <div>
-    <h1>Nos hébergements</h1>
-    <ul>
-      <li>Charte qualité</li>
-      <li>Soumettre votre hôtel</li>
-    </ul>
-  </div>
-  <div>
-    <h1>Assistance</h1>
-    <ul>
-      <li>Centre d'aide</li>
-      <li>Nous contacter</li>
-    </ul>
-  </div>
-</footer>
-
-
 
 </html>
