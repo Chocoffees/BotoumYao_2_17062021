@@ -25,8 +25,9 @@
   }
   nav li a {
     text-decoration: double underline #0065fc;
+    height: 30px;
   }
-  nav li a:active {
+  #actif a {
     border-top: none;
   }
   a.inscription {

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 668px) {
   html {
     width: 100%;
     height: 100%;
@@ -8,8 +8,6 @@
   #container {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   header {
     margin: 15px 15px 0 15px;
@@ -34,12 +32,12 @@
   }
   nav li a {
     width: 160px;
+    height: 30px;
     display: inline-block;
     border-bottom: 3px solid #f2f2f2;
     padding-top: 10px;
   }
-  nav a:active,
-  nav li:active {
+  #actif a {
     border-top: none;
     border-bottom-color: #0065fc;
     color: #0065fc;

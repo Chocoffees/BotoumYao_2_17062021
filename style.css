@@ -35,16 +35,18 @@ nav ul {
 }
 nav li {
   display: inline;
-  height: 100%;
+  height: 60px;
   list-style-type: none;
 }
 nav a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  height: 60px;
   text-decoration: none;
   font-size: small;
   color: black;
 }
-nav a:active {
+#actif a {
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
